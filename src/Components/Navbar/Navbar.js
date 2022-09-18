@@ -6,7 +6,12 @@ const Navbar = () =>{
     return(
         <div id = "fixedlist">
             <div id = "fixedlistcontent">
-                <img className="NavBar" src={require('../../Images/Moon.png')}/>
+                <div className = 'NavBar imgcontainer'>
+                    <img id = "moon" className="NavBar" src={require('../../Images/Moon.png')}/>
+                </div>
+                <div className = 'NavBar imgcontainer'>
+                    <img id = "search" className="NavBar" src={require('../../Images/Search.png')}/>
+                </div>
                 <div className='NavBar'>
                     <span className='NavBarText'>Gallery</span>
                 </div>
@@ -19,7 +24,7 @@ const Navbar = () =>{
                 <div className='NavBar'>
                     <span className='NavBarText'>Contact Us</span>
                 </div>
-                <div className = 'NavBar' id = "bagcontainer">
+                <div className = 'NavBar imgcontainer'>
                     <img id = "bag" className="NavBar" src={require('../../Images/Bag.png')}/>
                 </div>
             </div>
