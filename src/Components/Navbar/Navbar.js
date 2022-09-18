@@ -1,9 +1,28 @@
 import React from 'react'
+import './Navbar.css'
 
 const Navbar = () =>{
 
     return(
-        <div>
+        <div id = "fixedlist">
+            <div id = "fixedlistcontent">
+                <img className="NavBar" src={require('../../Images/Moon.png')}/>
+                <div className='NavBar'>
+                    <span className='NavBarText'>Gallery</span>
+                </div>
+                <div className='NavBar'>
+                    <span className='NavBarText'>Artists</span>
+                </div>
+                <div className='NavBar'>
+                    <span className='NavBarText'>About Us</span>
+                </div>
+                <div className='NavBar'>
+                    <span className='NavBarText'>Contact Us</span>
+                </div>
+                <div className = 'NavBar' id = "bagcontainer">
+                    <img id = "bag" className="NavBar" src={require('../../Images/Bag.png')}/>
+                </div>
+            </div>
         </div>
     )
 }
