@@ -14,10 +14,14 @@ const Navbar = (props) =>{
             <div id = "fixedlist">
                 <div id = "fixedlistcontent">
                     <div className = 'NavBar imgcontainer'>
-                        <img id = "moon" className="NavBar" onClick = {()=>PageClick("home")} src={require('../../Images/Moon.png')}/>
+                        <div id = "greymoon">
+                            <img id = "moon" className="NavBar" onClick = {()=>PageClick("home")} src={require('../../Images/Moon.png')}/>
+                        </div>
                     </div>
                     <div className = 'NavBar imgcontainer'>
-                        <img id = "search" className="NavBar" src={require('../../Images/Search.png')}/>
+                        <div id = "greysearch">
+                            <img id = "search" className="NavBar" src={require('../../Images/Search.png')}/>
+                        </div>
                     </div>
                     <div className='NavBar'>
                         <span className='NavBarText' onClick = {()=>PageClick("gallery")}>Gallery</span>
@@ -32,7 +36,9 @@ const Navbar = (props) =>{
                         <span className='NavBarText' onClick = {()=>PageClick("contact")}>Contact Us</span>
                     </div>
                     <div className = 'NavBar imgcontainer'>
-                        <img id = "bag" className="NavBar" src={require('../../Images/Bag.png')}/>
+                        <div>
+                            <img id = "bag" className="NavBar" src={require('../../Images/Bag.png')}/>
+                        </div>
                     </div>
                 </div>
             </div>
