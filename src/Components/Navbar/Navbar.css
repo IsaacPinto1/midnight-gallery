@@ -34,16 +34,16 @@
 }
 .NavBartext{
     display:flex;
-    color:white;
+    color:rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     height:40%;
 }
 .NavBartext:hover{
-    color:rgb(186, 186, 186);
+    filter:brightness(75%)
 }
 .NavBartext:active{
-    color:rgb(87, 87, 87);
+    filter:brightness(50%)
 }
 
 

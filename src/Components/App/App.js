@@ -8,7 +8,7 @@ import Navbar from '../Navbar/Navbar'
 
 const App = () =>{
 
-    const [page, changePage] = useState("contact")
+    const [page, changePage] = useState("home")
 
     const renderState = () =>{
         switch(page){
@@ -32,7 +32,7 @@ const App = () =>{
 
     return(
         <div>
-            <Navbar function = {changePage}/>
+            <Navbar function = {changePage} page = {page}/>
             {renderState()}
         </div>
     )
