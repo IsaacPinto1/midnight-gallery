@@ -1,1 +1,10 @@
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+To implement hover/click effects on text, instead of
+setting its color to a more grey color, use
+'filter:brightness(%)'. This allows us to reset the color to white
+when page changes without cancelling out the hover/click effects.
+
+To implement hover/click effects on the images, we can 
+change the opacity values on hover/click using
+'opacity: 0.0-1.0'

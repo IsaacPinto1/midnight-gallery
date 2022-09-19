@@ -60,13 +60,9 @@
 }
 #bag:hover {
     opacity: 0.7;
-    filter: alpha(opacity=40);
-    background-color: #000;
 }
 #bag:active {
     opacity: 0.4;
-    filter: alpha(opacity=40);
-    background-color: #000;
 }
 
 #search{
@@ -76,13 +72,9 @@
 }
 #search:hover {
     opacity: 0.7;
-    filter: alpha(opacity=40);
-    background-color: #000;
 }
 #search:active {
     opacity: 0.4;
-    filter: alpha(opacity=40);
-    background-color: #000;
 }
 
 #moon{
@@ -90,11 +82,7 @@
 }
 #greymoon:hover {
     opacity: 0.7;
-    filter: alpha(opacity=40);
-    background-color: #000;
 }
 #greymoon:active {
     opacity: 0.4;
-    filter: alpha(opacity=40);
-    background-color: #000;
 }
