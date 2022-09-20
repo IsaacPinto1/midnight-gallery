@@ -11,18 +11,17 @@ const Navbar = (props) =>{
 
     useEffect((()=>{
         pages.forEach((page)=>document.getElementById(page).style.textDecoration = "none")
-        pages.forEach((page)=>document.getElementById(page).style.color = "white")
+        //pages.forEach((page)=>document.getElementById(page).style.color = "white")
         if(props.page != "home"){
             document.getElementById(props.page).style.textDecoration = 'underline';
-            document.getElementById(props.page).style.color = 'rgb(0,150,255)';
+            //document.getElementById(props.page).style.color = 'rgb(0,150,255)';
         }
     }),
     [props.page])
 
 
     return(
-        <div>
-            <div id = "topPadding"></div>
+        <div id = "container">
             <div id = "fixedlist">
                 <div id = "fixedlistcontent">
                     <div className = 'NavBar imgcontainer'>

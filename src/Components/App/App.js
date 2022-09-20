@@ -5,6 +5,7 @@ import About from '../Pages/About/About'
 import Artists from '../Pages/Artists/Artists'
 import Contact from '../Pages/Contact/Contact'
 import Navbar from '../Navbar/Navbar'
+import './App.css'
 
 const App = () =>{
 
