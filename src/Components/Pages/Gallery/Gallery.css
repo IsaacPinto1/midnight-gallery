@@ -1,0 +1,43 @@
+#grid{
+    position:absolute;
+    top: 90px;
+    width:95%;
+    left:2.5%;
+    height:1200px;
+    display:grid;
+    grid-template-columns: 49% 2% 49%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+        "img1 . img2"
+        "img3 . img4"
+        "img5 . img6"
+        "img7 . img8";
+    row-gap: 25px;
+    padding-bottom: 105px;
+}
+
+#img1{
+    grid-area:img1;
+}
+#img2{
+    grid-area:img2
+}
+#img3{
+    grid-area:img3
+}
+#img4{
+    grid-area:img4
+}
+#img5{
+    grid-area:img5
+}
+#img6{
+    grid-area:img6
+}
+#img7{
+    grid-area:img7
+}
+#img8{
+    grid-area:img8
+}
+

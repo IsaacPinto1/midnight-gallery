@@ -14,7 +14,7 @@ const App = () =>{
     const renderState = () =>{
         switch(page){
             case "home":
-                return <Home/>
+                return <Home function = {changePage}/>
                 break;
             case "gallery":
                 return <Gallery/>

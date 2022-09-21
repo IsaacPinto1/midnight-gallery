@@ -8,3 +8,6 @@ when page changes without cancelling out the hover/click effects.
 To implement hover/click effects on the images, we can 
 change the opacity values on hover/click using
 'opacity: 0.0-1.0'
+
+To allow description box (flex item) to shrink beyond the size of
+its content, we can use the 'flex-shrink' property
