@@ -1,10 +1,11 @@
 import React from 'react'
+import './Artists.css'
 
 const Artists = () =>{
 
     return(
         <div>
-            <h1>Artists</h1>
+            <div id = "artistgrid"></div>
         </div>
     )
 }

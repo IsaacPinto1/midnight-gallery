@@ -1,3 +1,9 @@
+#gallerycontainer{
+    background-image: linear-gradient(black,white);
+    height: 1395px;
+}
+
+
 #grid{
     position:absolute;
     top: 90px;
@@ -14,6 +20,7 @@
         "img7 . img8";
     row-gap: 25px;
     padding-bottom: 105px;
+    min-width: 600px;
 }
 
 #img1{

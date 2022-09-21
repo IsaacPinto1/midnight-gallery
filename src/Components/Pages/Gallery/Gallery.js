@@ -5,7 +5,7 @@ import Art from '../../Art/Art'
 const Gallery = () =>{
 
     return(
-        <div>
+        <div id = "gallerycontainer">
             <div id = "grid">
                 <Art id = "img1" image = "Cat.svg" text = "This is an image of a blue cat wrapped around the Earth. It shows the south pole under the cat's paw, with Australia in the bottom right of the globe."/>
                 <Art id = "img2" image = "dog.jpeg"/>

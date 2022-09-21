@@ -1,0 +1,11 @@
+#artistgrid{
+    position:absolute;
+    top: 90px;
+    width:80%;
+    left:10%;
+    height:500px;
+    border:2px solid black;
+    height:80%;
+    min-height: 450px;
+    display:grid;
+}
