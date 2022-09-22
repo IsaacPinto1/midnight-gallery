@@ -1,0 +1,34 @@
+.cont{
+    width:220px;
+    height:220x;
+    border:2px solid grey;
+    box-shadow: 5px 5px black;
+    border-radius: 15px;
+    margin-bottom: 7px;
+    margin-right:7px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+#artistimage{
+    width:60%;
+    height:60%;
+    border:2px solid black;
+    margin-top: 20px;
+}
+
+#caption{
+    width:80%;
+    height:20%;
+    border:2px solid black;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+    .grow:hover { 
+    transform: scale(1.07); 
+    }
