@@ -30,11 +30,6 @@ const Navbar = (props) =>{
                         </div>
                     </div>
 
-                    <div className = 'NavBar imgcontainer'>
-                        <div id = "greysearch">
-                            <img id = "search" className="NavBar" src={require('../../Images/Search.png')}/>
-                        </div>
-                    </div>
 
                     <div className='NavBar'>
                         <span className='NavBarText' id = "gallery" onClick = {()=>PageClick("gallery")}>Gallery</span>

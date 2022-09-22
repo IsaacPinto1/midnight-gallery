@@ -71,18 +71,6 @@
     opacity: 0.4;
 }
 
-#search{
-    position:relative;
-    top:1px;
-    height:50%;
-}
-#search:hover {
-    opacity: 0.7;
-}
-#search:active {
-    opacity: 0.4;
-}
-
 #moon{
     height:65%;
 }
