@@ -1,12 +1,14 @@
 import React from "react";
 import './Profile.css'
 
-const Profile = () =>{
+const Profile = (props) =>{
 
     return (
-        <div className="cont grow">
-            <img id = "artistimage"></img>
-            <p id = "caption"></p>
+        <div className="cont grow" onClick={()=>props.function(props.name)}>
+            <img id = "artistimage" src={require(`../../Images/Art/${props.name}`)}></img>
+            <p id = "caption">
+                {props.artist}
+            </p>
         </div>
     )
 }

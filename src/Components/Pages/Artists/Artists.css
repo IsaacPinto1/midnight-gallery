@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 440px;
-    min-width: 880px;
+    min-width: 924px;
 }
 
 .row{
@@ -20,7 +20,9 @@
     justify-content: space-between;
 }
 
-#artistcont{
-    height:100%;
+#fixedbackground{
     background-image: linear-gradient(black,white);
+    height:100%;
+    width:100%;
+    position:fixed;
 }

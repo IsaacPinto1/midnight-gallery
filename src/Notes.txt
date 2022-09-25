@@ -11,3 +11,9 @@ change the opacity values on hover/click using
 
 To allow description box (flex item) to shrink beyond the size of
 its content, we can use the 'flex-shrink' property
+
+For Artists, the linear background is a fixed <div> with 100% width, so when you scroll
+side to side it still takes up whole screen. The same needs to be applied to the popup background
+
+Artist Faces: https://thispersondoesnotexist.com/
+Aritst Names: https://www.name-generator.org.uk/?i=2g4s8xdu

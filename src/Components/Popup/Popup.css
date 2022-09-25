@@ -1,0 +1,49 @@
+#window{
+    position:absolute;
+    width:50%;
+    left:25%;
+    top: 220px;
+    min-width: 693px;
+    height:230px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 15px;
+    z-index: 100;
+    padding: 20px;
+}
+
+#black{
+    width:100%;
+    height:100%;
+    background-color: black;
+    position:fixed;
+    opacity: 40%;
+    z-index: 99;
+}
+
+#headshot{
+    display: block;
+    width: 200px;
+    height:200px;
+    border-radius: 15px;
+    margin-bottom: 2px;
+}
+
+#snapshot{
+    float:left;
+    margin-right: 15px;
+}
+
+#name{
+    display:block;
+    font-size: 0.6em;
+    border:2px solid grey;
+    display:flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#artistdesc{
+    font-size: 1.8em;
+    margin: 0px;
+}
