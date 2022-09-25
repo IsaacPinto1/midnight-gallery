@@ -18,8 +18,8 @@
 
 #image{
     border: 2px solid black;
-    height:242px;
-    width:242px;
+    height:210px;
+    width:210px;
 }
 
 #desc{
@@ -49,3 +49,13 @@
     .grow:hover { 
     transform: scale(1.03); 
     }
+
+
+#title{
+    margin:0px;
+    display: flex;
+    justify-content: center;
+    border:2px solid black;
+    border-top: none;
+    font-size: 1.45em;
+}
