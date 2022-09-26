@@ -17,3 +17,6 @@ side to side it still takes up whole screen. The same needs to be applied to the
 
 Artist Faces: https://thispersondoesnotexist.com/
 Aritst Names: https://www.name-generator.org.uk/?i=2g4s8xdu
+
+
+background-position:center used to keep moon gif in center of screen

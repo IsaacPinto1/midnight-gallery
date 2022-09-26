@@ -1,0 +1,41 @@
+#about-background{
+    background-image: url("../../../Images/moongift.gif");
+    height:100%;
+    width:100%;
+    background-position: center;
+    background-size:cover;
+    filter:brightness(0.6);
+    position:fixed
+}
+
+#about-main-text{
+    left: 1.5%;
+    width:98%;
+    height:55px;
+    position:absolute;
+    top:18%;
+    color:white;
+    filter:brightness(1);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-style: bold;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+#about-text{
+    width:50%;
+    border:2px solid lime;
+    position:absolute;
+    top:65%;
+    left:25%;
+    color:white;
+    font-size: 5em;
+    text-align:center;
+    overflow: hidden;
+}
+
+#testing{
+    overflow: hidden;
+}
