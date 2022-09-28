@@ -20,3 +20,8 @@ Aritst Names: https://www.name-generator.org.uk/?i=2g4s8xdu
 
 
 background-position:center used to keep moon gif in center of screen
+
+To add cross in popup, the popup is overall positioned absolutely, but internally there's a
+relatively positioned div. This allows me to create a further inner div called 'cross'
+which is just top:0px; and right:0px; Further, I add padding-right to the paragraph so that
+the test doesn't overlap with the cross

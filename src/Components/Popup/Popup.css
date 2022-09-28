@@ -1,8 +1,8 @@
 #window{
     position:absolute;
     width:50%;
-    left:25%;
-    top: 220px;
+    left:23%;
+    top: 30%;
     min-width: 693px;
     height:230px;
     background-color: white;
@@ -10,6 +10,10 @@
     border-radius: 15px;
     z-index: 100;
     padding: 20px;
+}
+
+#window-content{
+    position:relative;
 }
 
 #black{
@@ -44,6 +48,19 @@
 }
 
 #artistdesc{
-    font-size: 1.8em;
+    font-size: 1.7em;
     margin: 0px;
+    padding-right:15px;
+}
+
+#cross{
+    position:absolute;
+    top:0px;
+    right:0px;
+    width:20px;
+    height:20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color:grey;
 }
