@@ -12,7 +12,7 @@ const Navbar = (props) =>{
     useEffect((()=>{
         pages.forEach((page)=>document.getElementById(page).style.textDecoration = "none")
         //pages.forEach((page)=>document.getElementById(page).style.color = "white")
-        if(props.page != "home"){
+        if(pages.includes(props.page)){
             document.getElementById(props.page).style.textDecoration = 'underline';
             //document.getElementById(props.page).style.color = 'rgb(0,150,255)';
         }
@@ -49,7 +49,7 @@ const Navbar = (props) =>{
 
                     <div className = 'NavBar imgcontainer'>
                         <div>
-                            <img id = "bag" className="NavBar" src={require('../../Images/Bag.png')}/>
+                            <img id = "bag" className="NavBar" onClick = {()=>PageClick("shop")} src={require('../../Images/Bag.png')}/>
                         </div>
                     </div>
 
