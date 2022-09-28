@@ -25,17 +25,47 @@
 }
 
 #about-text{
-    width:50%;
-    border:2px solid lime;
+    width:60%;
     position:absolute;
     top:65%;
-    left:25%;
+    left:20%;
     color:white;
-    font-size: 5em;
+    font-size: 1.9em;
     text-align:center;
     overflow: hidden;
+    line-height: 1.7em;
+    padding-bottom: 30px;
 }
 
-#testing{
-    overflow: hidden;
+.glow:hover {
+  animation: glow 0.9s forwards
 }
+
+.glow{
+    animation: glowOut 0.9s forwards
+}
+
+@keyframes glow {
+    from{
+        text-shadow: none;
+    }
+    to{
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff;
+    }
+}
+@keyframes glowOut{
+    from{
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff;
+    }
+    to{
+        text-shadow: none;
+    }
+}
+
+
+
+  
