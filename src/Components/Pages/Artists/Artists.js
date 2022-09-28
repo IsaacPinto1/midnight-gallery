@@ -34,7 +34,7 @@ const Artists = () =>{
 
     return(
         <div>
-            <div id = "fixedbackground"></div>
+            <div id = "artists-background"></div>
             {renderPopup()}
             <div id = "artistgrid">
                 <div className='row' id = "row1">
