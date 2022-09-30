@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import './Shop.css'
 
 const Shop = (props) =>{
+
+    const [render, changeRender] = useState("Empty")
 
     const HandleClick = () =>{
         props.changeCart(
@@ -15,12 +17,25 @@ const Shop = (props) =>{
         "'Goodbye from Sun'":0} )
     }
 
+    const RenderCart = () =>{
+        const render = Object.keys(props.cart).filter(key=>props.cart[key]!=0).map(key=><li>{key}:{props.cart[key]}</li>)
+        if(render.length == 0){
+            return(changeRender("Empty Cart!"))
+        } else{
+            return(changeRender(render))
+        }
+    }
+
+    useEffect(()=>{RenderCart()},[props.cart])
+
     return(
         <div id = "arbit">
-            {Object.keys(props.cart).map((key)=><li>{key}:{props.cart[key]}</li>)}
-            <button onClick = {HandleClick}>Clear Cart</button>
+            {render}
             <br/>
-            <button onClick={()=>props.page("checkout")}>Checkout</button>
+            {render == "Empty Cart!" && <button onClick={()=>props.page("gallery")}>Go To Gallery</button>}
+            {render != "Empty Cart!" && <button onClick = {HandleClick}>Clear Cart</button>}
+            <br/>
+            {render != "Empty Cart!" && <button onClick={()=>props.page("checkout")}>Checkout</button>}
         </div>
     )
 }

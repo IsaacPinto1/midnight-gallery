@@ -6,20 +6,21 @@ import Review from "./Form/Review/Review";
 import Confirm from "./Form/Confirm/Confirm";
 import './Checkout.css'
 
-const Checkout = () =>{
+const Checkout = (props) =>{
 
     const [formStage, changeFormStage] = useState(0)
+    const [details, changeDetails] = useState(["","","","","",""])
 
     const renderForm = () =>{
         switch (formStage){
             case 0:
-                return <Contact stage = {formStage} next={changeFormStage}/>
+                return <Contact update={changeDetails} stage = {formStage} next={changeFormStage}/>
             case 1:
-                return <Address stage = {formStage} next = {changeFormStage}/>
+                return <Address update={changeDetails} stage = {formStage} next = {changeFormStage}/>
             case 2:
-                return <Payment stage = {formStage} next = {changeFormStage}/>
+                return <Payment update={changeDetails} stage = {formStage} next = {changeFormStage}/>
             case 3:
-                return <Review stage = {formStage} next = {changeFormStage}/>
+                return <Review cart = {props.cart} stage = {formStage} next = {changeFormStage}/>
             case 4:
                 return <Confirm/>
         }
