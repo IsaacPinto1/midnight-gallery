@@ -6,6 +6,7 @@ import Artists from '../Pages/Artists/Artists'
 import Contact from '../Pages/Contact/Contact'
 import Navbar from '../Navbar/Navbar'
 import Shop from '../Pages/Shop/Shop'
+import Checkout from '../Pages/Checkout/Checkout'
 import './App.css'
 
 const App = () =>{
@@ -41,8 +42,10 @@ const App = () =>{
                 return <Contact/>
                 break;
             case "shop":
-                return <Shop changeCart = {changeCart} cart = {cart}/>;
+                return <Shop page = {changePage} changeCart = {changeCart} cart = {cart}/>;
                 break;
+            case "checkout":
+                return <Checkout/>
         }
     }
 

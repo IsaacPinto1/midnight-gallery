@@ -22,7 +22,6 @@ const Sure = (props) =>{
                 Are you sure!
                 <br/>
                 <button onClick = {ContinueClick}>Yes</button>
-                <br/>
                 <button onClick = {ReturnClick}>No</button>
             </div>
         </div>

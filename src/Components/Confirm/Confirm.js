@@ -23,7 +23,6 @@ const Confirm = (props) =>{
                 Continue shopping?
                 <br/>
                 <button onClick = {ContinueClick}>Yes</button>
-                <br/>
                 <button onClick = {CheckoutClick}>No, checkout</button>
             </div>
         </div>

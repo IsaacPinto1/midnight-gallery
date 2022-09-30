@@ -19,6 +19,8 @@ const Shop = (props) =>{
         <div id = "arbit">
             {Object.keys(props.cart).map((key)=><li>{key}:{props.cart[key]}</li>)}
             <button onClick = {HandleClick}>Clear Cart</button>
+            <br/>
+            <button onClick={()=>props.page("checkout")}>Checkout</button>
         </div>
     )
 }
