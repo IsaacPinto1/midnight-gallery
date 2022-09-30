@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import './Gallery.css'
 import Art from '../../Art/Art'
-import Sure from '../../Sure/Sure'
-import Confirm from '../../Confirm/Confirm'
+import Sure from './Sure/Sure'
+import Confirm from './Confirm/Confirm'
 
 const Gallery = (props) =>{
 
