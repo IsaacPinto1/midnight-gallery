@@ -3,9 +3,13 @@ import './Art.css'
 
 const Art = (props) =>{
 
-
+    const HandleClick = () =>{
+        props.function("sure")
+        props.clicked(props.title)
+    }
+    
     return (
-        <div onClick = {()=>props.function("sure")} id = {props.id} className='art grow'>
+        <div onClick = {HandleClick} id = {props.id} className='art grow'>
                 <div id = "art-and-text">
                     <div id = "image-and-name">
                         <img id = "image" src={require(`../../Images/Art/${props.image}`)}></img>
