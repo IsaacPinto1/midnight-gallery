@@ -17,7 +17,7 @@ const Gallery = (props) =>{
             case "sure":
                 return <Sure lastClicked = {lastClicked} cart = {props.cart} changeCart = {props.changeCart} function = {changePopup} clicked = {changeLastClicked}/>
             case "confirm":
-                return <Confirm function = {changePopup} clicked = {changeLastClicked}/>
+                return <Confirm page = {props.page} function = {changePopup} clicked = {changeLastClicked}/>
         }
     }
 

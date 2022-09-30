@@ -29,7 +29,7 @@ const App = () =>{
                 return <Home function = {changePage}/>
                 break;
             case "gallery":
-                return <Gallery cart = {cart} changeCart = {changeCart} function = {changeCart}/>
+                return <Gallery page = {changePage} cart = {cart} changeCart = {changeCart} function = {changeCart}/>
                 break;
             case "artists":
                 return <Artists/>

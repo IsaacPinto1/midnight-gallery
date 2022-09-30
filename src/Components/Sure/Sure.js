@@ -18,7 +18,13 @@ const Sure = (props) =>{
     return (
         <div>
             <div onClick = {ReturnClick} id = "sure-background"></div>
-            <div onClick = {ContinueClick} id = "sure-window"></div>
+            <div id = "sure-window">
+                Are you sure!
+                <br/>
+                <button onClick = {ContinueClick}>Yes</button>
+                <br/>
+                <button onClick = {ReturnClick}>No</button>
+            </div>
         </div>
     )
 }

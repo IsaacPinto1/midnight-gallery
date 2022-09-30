@@ -3,15 +3,29 @@ import './Confirm.css'
 
 const Confirm = (props) =>{
 
-    const HandleClick = () =>{
+    const ContinueClick = () =>{
         props.function("none");
+        props.clicked("none");
+    }
+
+    const CheckoutClick = () =>{
+        props.function("none")
         props.clicked("none")
+        props.page("shop")
     }
 
     return (
         <div>
-            <div onClick = {HandleClick} id = "confirm-background"></div>
-            <div onClick = {HandleClick} id = "confirm-window"></div>
+            <div onClick = {ContinueClick} id = "confirm-background"></div>
+            <div id = "confirm-window">
+                Added to cart
+                <br/>
+                Continue shopping?
+                <br/>
+                <button onClick = {ContinueClick}>Yes</button>
+                <br/>
+                <button onClick = {CheckoutClick}>No, checkout</button>
+            </div>
         </div>
     )
 }
