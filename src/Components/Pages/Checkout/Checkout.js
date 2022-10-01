@@ -14,13 +14,13 @@ const Checkout = (props) =>{
     const renderForm = () =>{
         switch (formStage){
             case 0:
-                return <Contact update={changeDetails} stage = {formStage} next={changeFormStage}/>
+                return <Contact details = {details} update={changeDetails} stage = {formStage} next={changeFormStage}/>
             case 1:
-                return <Address update={changeDetails} stage = {formStage} next = {changeFormStage}/>
+                return <Address details = {details} update={changeDetails} stage = {formStage} next = {changeFormStage}/>
             case 2:
-                return <Payment update={changeDetails} stage = {formStage} next = {changeFormStage}/>
+                return <Payment details = {details} update={changeDetails} stage = {formStage} next = {changeFormStage}/>
             case 3:
-                return <Review cart = {props.cart} stage = {formStage} next = {changeFormStage}/>
+                return <Review changeCart = {props.changeCart} details = {details} cart = {props.cart} stage = {formStage} next = {changeFormStage}/>
             case 4:
                 return <Confirm/>
         }

@@ -1,15 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import './Address.css'
 
 const Address = (props) =>{
+
+    const [address, changeAddress] = useState("")
+
+    const HandleClick = () =>{
+        if(address.length > 0){
+            const newDetails = props.details 
+            newDetails[2] = address;
+            props.update(newDetails)
+            props.next(props.stage+1)
+        }
+    }
 
     return(
         <div>
             Enter your Address:
             <br/>
-            <input type = "text"></input>
+            <input onChange={(event)=>changeAddress(event.target.value)} type = "text"></input>
             <br/>
-            <button onClick={()=>props.next(props.stage+1)}>Submit</button>
+            <button onClick={HandleClick}>Submit</button>
         </div>
     )
 }

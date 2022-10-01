@@ -45,7 +45,7 @@ const App = () =>{
                 return <Shop page = {changePage} changeCart = {changeCart} cart = {cart}/>;
                 break;
             case "checkout":
-                return <Checkout cart = {cart}/>
+                return <Checkout changeCart = {changeCart} cart = {cart}/>
         }
     }
 
