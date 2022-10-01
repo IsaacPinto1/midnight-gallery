@@ -28,9 +28,10 @@ const Checkout = (props) =>{
 
     return(
         <div>
-            <p id = "test">
+            <div id = "checkout-background"></div>
+            <div id = "test">
                 {renderForm()}
-            </p>
+            </div>
         </div>
     )
 }

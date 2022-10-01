@@ -20,7 +20,7 @@ const Shop = (props) =>{
     const RenderCart = () =>{
         const render = Object.keys(props.cart).filter(key=>props.cart[key]!=0).map(key=><li>{key}:{props.cart[key]}</li>)
         if(render.length == 0){
-            return(changeRender("Empty Cart!"))
+            return(changeRender("Empty!"))
         } else{
             return(changeRender(render))
         }
@@ -29,13 +29,18 @@ const Shop = (props) =>{
     useEffect(()=>{RenderCart()},[props.cart])
 
     return(
-        <div id = "arbit">
-            {render}
-            <br/>
-            {render == "Empty Cart!" && <button onClick={()=>props.page("gallery")}>Go To Gallery</button>}
-            {render != "Empty Cart!" && <button onClick = {HandleClick}>Clear Cart</button>}
-            <br/>
-            {render != "Empty Cart!" && <button onClick={()=>props.page("checkout")}>Checkout</button>}
+        <div>
+            <div id = "shop-background"></div>
+            <div id = "shop-text">
+                <div id = "your-cart">Your Cart:</div>
+                <br/>
+                {render != "Empty!" && <br/>}
+                {render}
+                {render == "Empty!" && <br/>}
+                <br/>
+                {render == "Empty!" && <button className='button-28' onClick={()=>props.page("gallery")}>Go To Gallery</button>}
+                {render != "Empty!" && <div><button className='button-28' onClick = {HandleClick}>Clear Cart</button><div id = "space"></div><button className='button-28' onClick={()=>props.page("checkout")}>Checkout</button></div>}
+            </div>
         </div>
     )
 }

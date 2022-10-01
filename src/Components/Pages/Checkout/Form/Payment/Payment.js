@@ -19,7 +19,7 @@ const Payment = (props) =>{
     }
 
     return(
-        <div>
+        <div id = "payment-background">
             Enter your card Number:
             <br/>
             <input onChange={(event) => changeCNumb(event.target.value)} type = "text"></input>
@@ -32,7 +32,7 @@ const Payment = (props) =>{
             <br/>
             <input onChange={(event) => changeCVV(event.target.value)} type = "text"></input>
             <br/>
-            <button onClick={HandleClick}>Submit</button>
+            <button className="button-28" onClick={HandleClick}>Submit</button>
         </div>
     )
 }

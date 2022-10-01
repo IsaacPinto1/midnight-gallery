@@ -4,7 +4,7 @@ import './Confirm.css'
 const Confirm = () =>{
 
     return(
-        <div>
+        <div id = "confirm-background1">
             Order Confirmed!
         </div>
     )

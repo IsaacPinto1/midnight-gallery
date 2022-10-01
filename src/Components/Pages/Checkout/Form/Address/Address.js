@@ -15,12 +15,12 @@ const Address = (props) =>{
     }
 
     return(
-        <div>
+        <div id = "address-background">
             Enter your Address:
             <br/>
             <input onChange={(event)=>changeAddress(event.target.value)} type = "text"></input>
             <br/>
-            <button onClick={HandleClick}>Submit</button>
+            <button className="button-28" onClick={HandleClick}>Submit</button>
         </div>
     )
 }

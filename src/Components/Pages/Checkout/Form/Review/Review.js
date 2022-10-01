@@ -22,7 +22,7 @@ const Review = (props) =>{
     }
 
     return(
-        <div>
+        <div id = "review-background">
             <h3>Review:</h3>
             Cart:{RenderCart()} <br/>
             Email: {props.details[0]} <br/>
@@ -31,7 +31,8 @@ const Review = (props) =>{
             Card Number: {props.details[3]} <br/>
             Expiration Date: {props.details[4]} <br/>
             CVV: {props.details[5]} <br/>
-            <button onClick={HandleClick}>Confirm</button>
+            <br/>
+            <button className="button-28" onClick={HandleClick}>Confirm</button>
         </div>
     )
 }

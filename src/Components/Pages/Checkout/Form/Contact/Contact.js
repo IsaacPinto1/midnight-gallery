@@ -20,7 +20,7 @@ const Contact = (props) =>{
 
 
     return(
-        <div>
+        <div id = "contact-background1">
             Enter your email:
             <br/>
             <input onChange={(event)=>changeEmail(event.target.value)} type = "text"></input>
@@ -28,7 +28,7 @@ const Contact = (props) =>{
             Enter your Phone Number:
             <input onChange={(event)=>changeNumber(event.target.value)} type = "text"></input>
             <br/>
-            <button onClick={HandleClick}>Submit</button>
+            <button className="button-28" onClick={HandleClick}>Submit</button>
         </div>
     )
 }

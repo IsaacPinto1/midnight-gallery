@@ -1,3 +1,18 @@
 input{
-    width:200px;
+    width:100%;
+}
+
+#contact-background1{
+    background-color: white;
+    height:fit-content;
+    width:300px;
+    padding:15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-28{
+    border:2px solid #1A1A1A;
 }
