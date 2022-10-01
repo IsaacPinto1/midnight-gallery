@@ -21,6 +21,10 @@ const Review = (props) =>{
         props.next(props.stage+1)
     }
 
+    const cardBlur = () =>{
+        return("**** **** **** " + props.details[3].slice(-4))
+    }
+
     return(
         <div id = "review-background">
             <h3>Review:</h3>
@@ -28,9 +32,8 @@ const Review = (props) =>{
             Email: {props.details[0]} <br/>
             Phone Number: {props.details[1]} <br/>
             Address: {props.details[2]} <br/>
-            Card Number: {props.details[3]} <br/>
+            Card Number: {cardBlur()} <br/>
             Expiration Date: {props.details[4]} <br/>
-            CVV: {props.details[5]} <br/>
             <br/>
             <button className="button-28" onClick={HandleClick}>Confirm</button>
         </div>

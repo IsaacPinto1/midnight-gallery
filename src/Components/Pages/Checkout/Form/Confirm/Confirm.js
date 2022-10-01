@@ -5,7 +5,7 @@ const Confirm = () =>{
 
     return(
         <div id = "confirm-background1">
-            Order Confirmed!
+            <div id = "order-confirmed">Order Confirmed!</div>
         </div>
     )
 }
