@@ -35,7 +35,11 @@ const Review = (props) =>{
             Card Number: {cardBlur()} <br/>
             Expiration Date: {props.details[4]} <br/>
             <br/>
-            <button className="button-28" onClick={HandleClick}>Confirm</button>
+            <div>
+                <button className="button-28" onClick={()=>{props.next(0)}}>Re-do</button>
+                <div id = "space"></div>
+                <button className="button-28" onClick={HandleClick}>Confirm</button>
+            </div>
         </div>
     )
 }
