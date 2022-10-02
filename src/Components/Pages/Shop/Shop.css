@@ -23,6 +23,11 @@
     position:fixed
 }
 
+#total{
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
 #space{
     width:15px;
     display:inline-block;

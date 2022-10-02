@@ -9,7 +9,8 @@ const Art = (props) =>{
     }
     
     return (
-        <div onClick = {HandleClick} id = {props.id} className='art grow'>
+        <div id = {props.id} className='art grow'>
+                <div onClick = {HandleClick} className="button-27" id = "price">${props.price}</div>
                 <div id = "art-and-text">
                     <div id = "image-and-name">
                         <img id = "image" src={require(`../../Images/Art/${props.image}`)}></img>

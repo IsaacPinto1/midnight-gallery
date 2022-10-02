@@ -18,7 +18,7 @@ const Shop = (props) =>{
     }
 
     const RenderCart = () =>{
-        const render = Object.keys(props.cart).filter(key=>props.cart[key]!=0).map(key=><li>{key}:{props.cart[key]}</li>)
+        const render = Object.keys(props.cart).filter(key=>props.cart[key]!=0).map(key=><li>{key}: {props.cart[key]}</li>)
         if(render.length == 0){
             return(changeRender("Empty!"))
         } else{
@@ -28,6 +28,27 @@ const Shop = (props) =>{
 
     useEffect(()=>{RenderCart()},[props.cart])
 
+    const prices = {
+        "'Purth'":20,
+        "'Guppy'":25,
+        "'Property of US Govt.'":10,
+        "'#WaffleFriday'":10,
+        "'Full Pisces'":30,
+        "'Serene Lake'":25,
+        "'Vikings'":35,
+        "'Goodbye from Sun'":30
+    }
+
+    const total = () =>{
+        let total = 0
+        Object.keys(props.cart).forEach((key)=>{
+            if(props.cart[key] != 0){
+                total += prices[key]*props.cart[key]
+            }
+        })
+        return total
+    }
+
     return(
         <div>
             <div id = "shop-background"></div>
@@ -36,6 +57,8 @@ const Shop = (props) =>{
                 <br/>
                 {render != "Empty!" && <br/>}
                 {render}
+                {render != "Empty!" && <br/>}
+                {render != "Empty!" && <div id = "total">Total: ${total()}</div>}
                 {render == "Empty!" && <br/>}
                 <br/>
                 {render == "Empty!" && <button className='button-28' onClick={()=>props.page("gallery")}>Go To Gallery</button>}
