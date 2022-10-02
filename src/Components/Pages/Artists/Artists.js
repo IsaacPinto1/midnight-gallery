@@ -22,7 +22,7 @@ const Artists = () =>{
             case "food.jpeg":
                 return <Popup function = {changePopup} id = "food.jpeg" artist = "4.jpeg" name = "Ria Taylor" desc = "Ria Taylor is a 27-year-old professional 'food influencer' who enjoys relaxing, jigsaw puzzles and upcycling. Ria has commented that her happiness is directly proportional to the amount of likes she receives per post. With this in mind, we hope you enjoy her art."/>
             case "FullMoon.png":
-                return <Popup function = {changePopup} id = "FullMoon.png" artist = "5.jpeg" name = "Irene Reynolds" desc = "Irene Reynolds is a 21-year-old 'astrologist' who enjoys palm reading, praying and tarot cards. Irene has said that her interesting in superstitious practices started 'ironically' but after quote 'too many coincidences', these superstitions heavily influence her life and art."/>
+                return <Popup function = {changePopup} id = "FullMoon.png" artist = "5.jpeg" name = "Irene Reynolds" desc = "Irene Reynolds is a 21-year-old 'astrologist' who enjoys palm reading, praying and tarot cards. Irene has said that her interest in superstitious practices started 'ironically' but after quote 'too many coincidences', these superstitions heavily influence her life and art."/>
             case "mountain.jpeg":
                 return <Popup function = {changePopup} id = "mountain.jpeg" artist = "6.jpeg" name = "Russel Patel" desc = "Although the cause of death was reported as heart disease, Russel Patel, a 34-year-old government politician, is convinced that his ex-boyfriend, Galen Dudley, was murdered. Russel takes great inspiration from the late Bob Ross."/>
             case "rowing.webp":

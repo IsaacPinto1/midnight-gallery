@@ -53,6 +53,7 @@ const Review = (props) =>{
             {RenderCart()} <br/>
             {<div><span style={{fontWeight: "bold", textDecoration: "underline"}}>Total:</span> ${total()}</div>}
             <br/>
+            <br/>
             <div style={{fontWeight: "bold", textDecoration: "underline"}}>Details:</div>
             Email: {props.details[0]} <br/>
             Phone Number: {props.details[1]} <br/>
