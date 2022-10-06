@@ -10,7 +10,7 @@ To run, you will need node.js installed, as well as npm (included with node.js)
 
 ## Installation
 
-Navigate to the directory on your machine and run 'npm run start' in terminal/cmd prompt
+Navigate to the directory on your machine first run 'npm install', then run 'npm run start' to load the website in your browser
 
 ## Usage
 
