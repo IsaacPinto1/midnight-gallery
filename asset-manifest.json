@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/midnight-gallery/static/css/main.7ab61635.css",
+    "main.js": "/midnight-gallery/static/js/main.d7c45844.js",
+    "static/media/moongift.gif": "/midnight-gallery/static/media/moongift.b196c7ef543b9b4ce1c7.gif",
+    "static/media/5.jpeg": "/midnight-gallery/static/media/5.21c7c5c4384e6c92a4a5.jpeg",
+    "static/media/4.jpeg": "/midnight-gallery/static/media/4.a9e25982d07659f1d5db.jpeg",
+    "static/media/7.jpeg": "/midnight-gallery/static/media/7.3050037c10ea48b9bc9e.jpeg",
+    "static/media/2.jpeg": "/midnight-gallery/static/media/2.508196852eed6ec75c68.jpeg",
+    "static/media/6.jpeg": "/midnight-gallery/static/media/6.b4174e3d7f2695057b64.jpeg",
+    "static/media/3.jpeg": "/midnight-gallery/static/media/3.e5719e4b901dcf0877ab.jpeg",
+    "static/media/1.jpeg": "/midnight-gallery/static/media/1.12a4add262d8cdd252ff.jpeg",
+    "static/media/8.jpeg": "/midnight-gallery/static/media/8.8e5b339e4754ec210559.jpeg",
+    "static/media/Bag.png": "/midnight-gallery/static/media/Bag.7f18c169ed81eee7f6f8.png",
+    "static/media/FullMoon.png": "/midnight-gallery/static/media/FullMoon.e299c4b280dca08e31fc.png",
+    "static/media/Moon.png": "/midnight-gallery/static/media/Moon.ea1e9702f56470e0471c.png",
+    "static/media/flower.jpeg": "/midnight-gallery/static/media/flower.e4d0f413b5118fe1a053.jpeg",
+    "static/media/food.jpeg": "/midnight-gallery/static/media/food.fcdab8c3e2b65dba8a55.jpeg",
+    "static/media/Sunset.jpeg": "/midnight-gallery/static/media/Sunset.df687e1c1f5f1839562f.jpeg",
+    "static/media/dog.jpeg": "/midnight-gallery/static/media/dog.42a5dadf8779773aa8a8.jpeg",
+    "static/media/Cat.svg": "/midnight-gallery/static/media/Cat.a7f36e71ed36c2dde6ca.svg",
+    "static/media/mountain.jpeg": "/midnight-gallery/static/media/mountain.b2a8b6a2e4b3bd8ebd38.jpeg",
+    "static/media/rowing.webp": "/midnight-gallery/static/media/rowing.8c45539181b7e6b569fc.webp",
+    "index.html": "/midnight-gallery/index.html",
+    "main.7ab61635.css.map": "/midnight-gallery/static/css/main.7ab61635.css.map",
+    "main.d7c45844.js.map": "/midnight-gallery/static/js/main.d7c45844.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ab61635.css",
+    "static/js/main.d7c45844.js"
+  ]
+}
